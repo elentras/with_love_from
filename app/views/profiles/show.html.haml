@@ -1,0 +1,52 @@
+%p#notice= notice
+%p
+  %strong First name:
+  = @profile.first_name
+%p
+  %strong Last name:
+  = @profile.last_name
+%p
+  %strong Description:
+  = @profile.description
+%p
+  %strong Height:
+  = @profile.height
+%p
+  %strong Weight:
+  = @profile.weight
+%p
+  %strong Eyes color:
+  = @profile.eyes_color
+%p
+  %strong Hair color:
+  = @profile.hair_color
+%p
+  %strong Morphology:
+  = @profile.morphology
+%p
+  %strong Hobbies:
+  = @profile.hobbies
+%p
+  %strong Looking for:
+  = @profile.looking_for
+%p
+  %strong Birth date:
+  = @profile.birth_date
+%p
+  %strong Style:
+  = @profile.style
+%p
+  %strong Life style:
+  = @profile.life_style
+%p
+  %strong Ethny:
+  = @profile.ethny
+%p
+  %strong Alcool level:
+  = @profile.alcool_level
+%p
+  %strong Smoker level:
+  = @profile.smoker_level
+= link_to 'Edit', edit_profile_path(@profile)
+|
+\#{link_to 'Back', profiles_path}
